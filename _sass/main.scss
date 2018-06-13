@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,800,800i');
+
+$bp-medium: 800px;
+
+$color-primary: #E0AA52;
+$color-secondary: #205587;
+$padding: 1rem;
+
+$font-family: 'Open Sans', sans-serif;
+$font-normal: 300;
+$font-heavy: 900;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after{ 
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E0AA52;
+  background-image: linear-gradient(to right, darken(#E0AA52, 4), lighten(#E0AA52,2));
+  color: white;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: $font-normal;
+  padding: $padding;
+}
+
+@media screen and (min-width: $bp-medium) {
+  body {
+    padding: $padding*3;
+  }
+}
+
+a, a:visited {
+  color: $color-secondary;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Site header */
+
+.site-header {
+  
+}
+
+@media screen and (min-width: $bp-medium) {
+  .site-header {
+    display: flex;
+  }
+}
+
+.site-title {
+  font-size: 2.4em;
+  font-weight: $font-heavy;
+  letter-spacing: -.07em;
+  line-height: .8em;
+  margin: 0 0 .05em;
+  text-transform: uppercase;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.site-subtitle {
+  font-size: 1.8em;
+  font-weight: $font-normal;
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: $bp-medium) {
+  .site-title {
+    font-size: 4em;
+  }
+  
+  .site-subtitle {
+    font-size: 2.4em;
+  }
+  
+}
+
+.alt-link,
+.alt-link:visited {
+  color: white;
+  font-weight: $font-normal;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
+
+.alt-link:hover,
+.alt-link:target {
+  color: $color-secondary;
+}
+
+/* Site navigation menu */
+
+.site-navigation {
+  margin: 1.4em 0;
+  transition: all .3s ease-in-out;
+}
+
+.site-navigation a {
+  @extend .alt-link;
+  font-size: 1.2em;
+  padding: .3em;
+}
+
+@media screen and (min-width: $bp-medium) {
+  .site-navigation {
+    text-align: right;
+    margin-left: auto
+  }
+  .site-navigation a {
+    padding: 0 1em 0 0;
+  }
+  
+}
+
+.site-description {
+  line-height: 1.4em;
+  max-width: 30em;
+}
+
+@media screen and (min-width: $bp-medium) {
+  .site-description {
+    margin: 0;
+  }
+}
+
+.headshot {
+  margin: 2em 0;
+}
+
+@media screen and (min-width: $bp-medium) {
+  .headshot {
+    margin: 4em 0 2em;
+  }
+}
+
+.headshot img {
+  border: .8em solid white;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
+  width: 14em;
+}
+
+.site-content {
+  font-size: 1.4em;
+  margin: 2em 0;
+
+  p {
+    max-width: 40em;
+  }
+}

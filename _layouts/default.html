@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+  <div id="wrapper" class="home">
+      <header class="site-header">
+        
+        <div class="site-branding">
+          <!-- TO-DO FIX THIS LINK -->
+          <h1 class="site-title"><a href="/" id="nav-home">Abner<br>Gramble</a></h1>
+          <h2 class="site-subtitle">Creative agency</h2>
+        </div>
+        
+        <nav role="navigation" class="site-navigation">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        
+      </header>
+      
+    
+      <div class="site-content">
+
+        {{ content }}
+
+      </div>
+      
+    </div><!-- .site-wrapper -->
+
+  </body>
+
+</html>
